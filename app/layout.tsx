@@ -4,6 +4,7 @@ import Footer from "./components/footer/Footer";
 import CookieBanner from "./components/cookies/CookieBanner";
 import GoogleAnalytics from "./components/analytics/GoogleAnalytics";
 import "./globals.css";
+import LiveMarketBar from "./components/live-market/LiveMarketBar";
 
 export const metadata: Metadata = {
   title: "Utility Finance",
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <LiveMarketBar />
         <Footer />
         <CookieBanner />
         <GoogleAnalytics />
