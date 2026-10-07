@@ -1,6 +1,8 @@
 import Link from "next/link";
 import "./learn.css";
 
+export const instant = false;
+
 type LearnPageProps = {
   params: Promise<{
     slug: string;
@@ -55,7 +57,7 @@ const topics: Record<
     why:
       "Bitcoin can move much more sharply than traditional currencies or many major markets, so it can have a big effect on the value of a crypto portfolio.",
     example:
-      "If Bitcoin rises 10%, £1,000 invested in Bitcoin would become £1,100 before fees and taxes.",
+      "If Bitcoin rises 10%, Â£1,000 invested in Bitcoin would become Â£1,100 before fees and taxes.",
   },
   "ETH/USD": {
     title: "Ethereum",
@@ -162,7 +164,7 @@ export default async function LearnPage({
           </p>
 
           <Link href="/" className="learn-page__back">
-            ← Back to Utility Finance
+            â† Back to Utility Finance
           </Link>
         </section>
       </main>
@@ -173,7 +175,7 @@ export default async function LearnPage({
     <main className="learn-page">
       <section className="learn-page__hero">
         <span className="learn-page__eyebrow">
-          UTILITY LEARN · {topic.category}
+          UTILITY LEARN Â· {topic.category}
         </span>
 
         <h1>{topic.title}</h1>
@@ -227,18 +229,19 @@ export default async function LearnPage({
 
         <div className="learn-page__actions">
           <Link href="/tools/mortgage">
-            Mortgage calculator →
+            Mortgage calculator â†’
           </Link>
 
           <Link href="/">
-            Explore more tools →
+            Explore more tools â†’
           </Link>
         </div>
       </section>
 
       <Link href="/" className="learn-page__back">
-        ← Back to Utility Finance
+        â† Back to Utility Finance
       </Link>
     </main>
   );
 }
+
