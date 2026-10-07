@@ -2,6 +2,7 @@
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import CookieBanner from "./components/cookies/CookieBanner";
+import GoogleAnalytics from "./components/analytics/GoogleAnalytics";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <CookieBanner />
+        <GoogleAnalytics />
       </body>
     </html>
   );
